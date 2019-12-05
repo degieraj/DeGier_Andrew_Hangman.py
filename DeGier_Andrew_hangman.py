@@ -97,13 +97,13 @@ def main():
                     incorrect += 1
                     guesses = guesses + letter
         else:
-            # If word guessed correclt print a win statement and clear the screen
+            # If word guessed correctly print a win statement and clear the screen
             print(f'\nThe word was: {gameword}   You used {incorrect}/7 lives to guess correctly')
             input('Congratulations you win')
             clear()
             break
 
-    # If all guesses used up print a lose statement and clear the screen
+    # If all guesses have been used up, print a lose statement and clear the screen
     if incorrect == 7:
         print(f'\nThe word was: {gameword}.')
         input('You lose')
